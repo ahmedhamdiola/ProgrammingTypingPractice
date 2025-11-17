@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom Typing Test</title>
+</head>
+<body>
+<h2>Loading typing test...</h2>
+<script>
+fetch('https://raw.githubusercontent.com/ahmedhamdiola/ProgrammingTypingPractice/main/wordsPractice.txt')
+  .then(res => res.text())
+  .then(text => {
+    const words = text.split('\n').join('|');
+    const url = `https://10fastfingers.com/widget/typingtest?dur=60&rand=12&words=${words}`;
+    window.location.href = url;
+  });
+</script>
+</body>
+</html>
