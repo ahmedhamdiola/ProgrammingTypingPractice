@@ -18,3 +18,11 @@ export
 tsx
 jsx
 js
+vector
+queue
+stack
+interface
+class
+[]
+<>
+{}
